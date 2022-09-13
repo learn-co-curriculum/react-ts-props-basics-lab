@@ -13,6 +13,40 @@ by passing it down as a `prop` rather than importing it. This will be
 particularly true once we start working with data from external sources, such as
 APIs.
 
+This also highlights an important thing to note about props: the values you pass 
+to them do not have to be hard coded. You can pass in variables as prop values. 
+For example, this: 
+
+```jsx
+const person = {
+  name: 'Salman',
+  age: 27
+}
+
+function Directory() {
+  return(
+    <div>
+      <Person name={person.name} age={person.age}>
+    </div>
+  )
+}
+```
+
+works the same as this: 
+
+```jsx
+function Directory() {
+  return(
+    <div>
+      <Person name="Salman" age="27">
+    </div>
+  )
+}
+```
+
+This becomes very powerful when we start working with dynamic data. Let's practice 
+it!
+
 In this lab, you'll write React components and render them dynamically based on
 `props` they receive from their parent components. This will enable us to use
 components as templates with the ability to render variable content.
