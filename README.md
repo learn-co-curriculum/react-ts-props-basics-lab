@@ -54,6 +54,9 @@ Finally, `App` should **also** pass down the `github` and `linkedin` links to
 the `About` component, so that `About` can pass those props down to the `Links`
 component you will create.
 
+**Hint**: Take a look at the `src/data/user.ts` file to see how the data is 
+structured.
+
 ### About
 
 Create a `Props` interface that:
@@ -65,7 +68,7 @@ below if you get stuck.
 
 Update the `About` component so that:
 
-- The `props` are typed with the `Props` interface you created
+- The `props` are passed in and typed with the `Props` interface you created
 - If a prop of `bio` is passed to this component, it is displayed inside of a
   `<p>` tag
 - If a prop of `bio` is not passed down, or if `bio` is an empty string,
