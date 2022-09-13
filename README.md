@@ -38,8 +38,8 @@ Here is an image of what we want once we are finished:
 
 It's recommended that you run `npm start` and work on this in the browser
 **before** running tests. Try to get your app to match the demo! Once you've
-built out the components below, run `npm test` or `learn test` to see if your
-code passes the tests.
+built out the components below, run `npm test` to see if your code passes the 
+tests.
 
 ### App
 
@@ -56,13 +56,21 @@ component you will create.
 
 ### About
 
+Create a `Props` interface that:
+
+- Outlines the props and their expected types 
+- **Hint**: `bio` is going to be an optional prop, as we'll see below. Can you
+recall the TypeScript syntax that makes a property optional? Check the resources
+below if you get stuck.
+
 Update the `About` component so that:
 
+- The `props` are typed with the `Props` interface you created
 - If a prop of `bio` is passed to this component, it is displayed inside of a
   `<p>` tag
 - If a prop of `bio` is not passed down, or if `bio` is an empty string,
   **don't** display the `<p>` tag
-- **Hint**: you'll need to do some [_conditional
+- **Hint**: You'll need to do some [_conditional
   rendering_][conditional rendering] here to determine whether or not to display
   the `<p>` tag
 
@@ -78,9 +86,14 @@ Create a new component called `Links`. In this component, display the following:
 - **Hint**: make sure your `<a>` tags display the URL of the user's links as
   their text content so that it matches the demo image above
 
+Create a `Props` interface based on the props passed down to this component and
+use it to the the `props`. 
+
 ## Resources
 
 - [React Documentation: Components](https://reactjs.org/docs/react-component.html)
 - [Conditional Rendering][conditional rendering]
+- [TypeScript Documentation: Optional Properties][optional properties]
 
 [conditional rendering]: https://reactjs.org/docs/conditional-rendering.html
+[optional properties]: (https://www.typescriptlang.org/docs/handbook/2/objects.html#optional-properties)
