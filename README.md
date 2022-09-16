@@ -38,7 +38,7 @@ works the same as this:
 function Directory() {
   return(
     <div>
-      <Person name="Salman" age="27">
+      <Person name="Salman" age=27>
     </div>
   )
 }
